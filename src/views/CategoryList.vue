@@ -40,5 +40,9 @@ export default {
         .then((response) => (this.ads = response.data));
     },
   },
+
+  mounted() {
+    this.fetchData();
+  },
 };
 </script>

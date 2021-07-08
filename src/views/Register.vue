@@ -1,18 +1,9 @@
 <template>
-  <div class="min-h-screen bg-white flex">
+  <div class="flex min-h-screen bg-white">
     <div
-      class="
-        flex-1 flex flex-col
-        justify-center
-        py-12
-        px-4
-        sm:px-6
-        lg:flex-none
-        lg:px-20
-        xl:px-24
-      "
+      class="flex flex-col justify-center flex-1 px-4 py-12  sm:px-6 lg:flex-none lg:px-20 xl:px-24"
     >
-      <div class="mx-auto w-full max-w-sm lg:w-96">
+      <div class="w-full max-w-sm mx-auto lg:w-96">
         <div>
           <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Sign up</h2>
         </div>
@@ -35,21 +26,7 @@
                     type="username"
                     autocomplete="username"
                     required
-                    class="
-                      appearance-none
-                      block
-                      w-full
-                      px-3
-                      py-2
-                      border border-gray-300
-                      rounded-md
-                      shadow-sm
-                      placeholder-gray-400
-                      focus:outline-none
-                      focus:ring-indigo-500
-                      focus:border-indigo-500
-                      sm:text-sm
-                    "
+                    class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -69,21 +46,7 @@
                     type="password"
                     autocomplete="current-password"
                     required
-                    class="
-                      appearance-none
-                      block
-                      w-full
-                      px-3
-                      py-2
-                      border border-gray-300
-                      rounded-md
-                      shadow-sm
-                      placeholder-gray-400
-                      focus:outline-none
-                      focus:ring-indigo-500
-                      focus:border-indigo-500
-                      sm:text-sm
-                    "
+                    class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -91,24 +54,8 @@
               <div>
                 <button
                   @click="register"
-                  type="submit"
-                  class="
-                    w-full
-                    flex
-                    justify-center
-                    py-2
-                    px-4
-                    border border-transparent
-                    rounded-md
-                    shadow-sm
-                    text-sm
-                    font-medium
-                    text-white
-                    bg-indigo-600
-                    hover:bg-indigo-700
-                    focus:outline-none
-                    focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
-                  "
+                  type="button"
+                  class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Sign up
                 </button>
@@ -118,9 +65,9 @@
         </div>
       </div>
     </div>
-    <div class="hidden lg:block relative w-0 flex-1">
+    <div class="relative flex-1 hidden w-0 lg:block">
       <img
-        class="absolute inset-0 h-full w-full object-cover"
+        class="absolute inset-0 object-cover w-full h-full"
         src="https://images.pexels.com/photos/4515793/pexels-photo-4515793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         alt=""
       />
@@ -154,6 +101,7 @@ export default {
         .then((response) => {
           if (response.status == 200) {
             this.$router.push("/login");
+            console.log("WOrks!");
           }
         });
     },

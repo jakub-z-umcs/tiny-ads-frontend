@@ -1,6 +1,8 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-2xl mt-6 text-center text-gray-600">Your Favourites</h1>
+    <h1 class="mt-6 text-3xl font-extrabold text-center text-gray-900">
+      Your Favourites
+    </h1>
     <div class="mt-4">
       <AdsList :ads="ads" />
     </div>

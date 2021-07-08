@@ -1,14 +1,8 @@
 <template>
   <div class="">
-    <div class="max-w-7xl mx-auto py-12 lg:py-16">
+    <div class="py-12 mx-auto max-w-7xl lg:py-16">
       <p
-        class="
-          text-center text-base
-          font-semibold
-          uppercase
-          text-gray-600
-          tracking-wider
-        "
+        class="text-3xl font-extrabold tracking-wider text-center text-gray-900 uppercase "
       >
         Categories
       </p>
@@ -18,17 +12,7 @@
           :to="`/categories/${category.id}`"
           v-for="category in categories"
           v-bind:key="category.id"
-          class="
-            col-span-1
-            flex
-            justify-center
-            py-4
-            px-2
-            bg-gray-50
-            text-gray-600
-            hover:bg-indigo-50
-            hover:text-indigo-600
-          "
+          class="flex justify-center col-span-1 px-2 py-4 text-gray-600  bg-gray-50 hover:bg-indigo-50 hover:text-indigo-600"
         >
           <h2 class="text-xl">{{ category.name }}</h2>
         </router-link>
