@@ -1,4 +1,4 @@
-# my_app
+# TinyAds
 
 ## Project setup
 ```
